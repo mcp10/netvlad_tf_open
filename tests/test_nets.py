@@ -1,4 +1,7 @@
 #!/usr/bin/python
+import sys
+sys.path.append('/Users/maximilienpicquet/PycharmProjects/indoor_loc/netvlad/netvlad_tf_open/python')
+
 
 import netvlad_tf.nets as nets
 
