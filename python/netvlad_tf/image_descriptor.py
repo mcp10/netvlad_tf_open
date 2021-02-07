@@ -26,6 +26,7 @@ class ImageDescriptor(object):
     def describeAllJpegsInPath(self, path, batch_size, verbose=False):
         ''' returns a list of descriptors '''
         jpeg_paths = sorted(glob.glob(os.path.join(path, '*.jpg')))
+        jpeg_paths.append(sorted(glob.glob(os.path.join(path, '*.jpg'))))
         descs = []
         if verbose:
             print('processing %d images' % len(jpeg_paths))
